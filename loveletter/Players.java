@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Players {
     private String name;
     private int score;
+    private boolean stillinround;
     
     private ArrayList<String> hands = new ArrayList<>(2);
     
