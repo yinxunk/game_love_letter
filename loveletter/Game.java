@@ -59,6 +59,6 @@ public static void game(){
     
     
     public static void main(String[] args) {
-        game();
+        
     }
 }

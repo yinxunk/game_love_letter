@@ -10,15 +10,21 @@ public class GamePlayCard{
         GameDrawCard.drawCard(player, characters );
         System.out.println("Only the cards in your hand can be played");
         System.out.println(GameShowHand.showHand(player));
-        System.out.println("Choose a card to play");
         Scanner playedcard = new Scanner(System.in);
-        if(true){
-            //to check if the selected card is in the hands of the current player
-        }
-        else{}
+        System.out.println("Choose a card to play");
         String card = playedcard.nextLine();
-        player.getHands().remove(card);
-        System.out.println(GameShowHand.showHand(player));
+        if(player.getHands().contains(card)){
+            player.getHands().remove(card);
+            player.playedCard(card);
+            System.out.println("player played" + player.getPlayedCard());
+
+        }
+        else{
+            System.out.println("You can't play something you don't have");
+        }
+        
+        
+        
         
 
     }
