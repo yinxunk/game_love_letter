@@ -17,6 +17,7 @@ public class Cards {
     public String getName(){
         return this.name;
     }
+    //if discarded in any way, the player loses this round
     void PrincessAnnette(Players player){
         player.stillInRound(false);
     }

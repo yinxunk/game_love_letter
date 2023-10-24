@@ -4,26 +4,27 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class CreateDeck {
-    public static ArrayList<String> createDeck(){
-    ArrayList<String> Characters = new ArrayList<>(16);
-    Characters.add("8Princess");
-    Characters.add("7Countess");
-    Characters.add("6King");
-    Characters.add("5Prince");
-    Characters.add("5prince");
-    Characters.add("4Handmaid");
-    Characters.add("4Handmaid");
-    Characters.add("3Baron");
-    Characters.add("3Baron");
-    Characters.add("2Priest");
-    Characters.add("2Priest");
-    Characters.add("1Guard");
-    Characters.add("1Guard");
-    Characters.add("1Guard");
-    Characters.add("1Guard");
-    Characters.add("1Guard");
+    public static ArrayList<Cards> createDeck(){
+    ArrayList<Cards> Characters = new ArrayList<>(16);
+    Characters.add(new Cards(8, "Princess"));
+    Characters.add(new Cards(7, "Countess"));
+    Characters.add(new Cards(6, "King"));
+    Characters.add(new Cards(5, "Prince"));
+    Characters.add(new Cards(5, "Prince"));
+    Characters.add(new Cards(4, "Handmaid"));
+    Characters.add(new Cards(4, "Handmaid"));
+    Characters.add(new Cards(3, "Baron"));
+    Characters.add(new Cards(3, "Baron2"));
+    Characters.add(new Cards(2, "Priest"));
+    Characters.add(new Cards(2, "Priest"));
+    Characters.add(new Cards(1, "Guard"));
+    Characters.add(new Cards(1, "Guard"));
+    Characters.add(new Cards(1, "Guard"));
+    Characters.add(new Cards(1, "Guard"));
+    Characters.add(new Cards(1, "Guard"));
+    
     int i  = new Random().nextInt(Characters.size());
-    String setaside = Characters.remove(i);
+    Cards setaside = Characters.remove(i);
     return Characters;
 
    }

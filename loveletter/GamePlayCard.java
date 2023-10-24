@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GamePlayCard{
-    public static void playCard(Players player, ArrayList<String> characters){
+    public static void playCard(Players player, ArrayList<Cards> characters){
         GameDrawCard.drawCard(player, characters );
         System.out.println("Only the cards in your hand can be played");
         System.out.println(GameShowHand.showHand(player));

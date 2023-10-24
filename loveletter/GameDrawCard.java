@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GameDrawCard {
-    public static void drawCard(Players player, ArrayList<String> deck ){
+    public static void drawCard(Players player, ArrayList<Cards> deck ){
         
 
         
@@ -18,7 +18,7 @@ public class GameDrawCard {
         
     }  
     public static void main(String[] args) {
-        ArrayList<String> Char = CreateDeck.createDeck();
+        ArrayList<Cards> Char = CreateDeck.createDeck();
         for(int i = 0; i < Char.size(); i++ ){
             System.out.print(Char.get(i) + "|");
         }

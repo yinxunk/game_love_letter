@@ -11,7 +11,7 @@ public class Game {
 
 public static void game(){
     Players[] playersingame = GameStart.start();
-    ArrayList<String> deck = CreateDeck.createDeck();
+    ArrayList<Cards> deck = CreateDeck.createDeck();
     for(int i = 0; i < playersingame.length; i++){
         GameDrawCard.drawCard(playersingame[i], deck);
     }
