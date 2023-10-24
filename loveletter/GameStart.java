@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class GameStart {
     public static Players[] start(){
-        System.out.println("Welcome to a game, where mind tricks are the weapons of players");
+        
         Scanner startprompt = new Scanner(System.in);
         System.out.println("To start the game, please type \\start");
         String executestartprompt = startprompt.nextLine();
         Players[] playeringame = new Players[4];
         
         if(executestartprompt.equals("\\start")){
+            System.out.println("Welcome to a game, where mind tricks are the weapons of players");
             System.out.println("How many players are there?");
             Scanner playeramount = new Scanner(System.in);
             int number = playeramount.nextInt();
@@ -51,6 +52,7 @@ public class GameStart {
         }
         else{
             System.out.println("Please make sure you spelled corerectly");
+            start();
             
 
             
